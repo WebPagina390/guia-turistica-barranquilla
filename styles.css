@@ -1,0 +1,418 @@
+/* Importar fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FFEB3B; /* Color de fondo suave, similar al amarillo */
+}
+
+/* Estilos de navegación */
+nav {
+    background: #FF5722; /* Color vibrante para el menú */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+#inicio {
+    background-color: #FFF8E1; /* Color de fondo suave */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contenedor-inicio {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 150px; /* Ajusta el tamaño del logo */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #FF5722; /* Color vibrante */
+    margin-bottom: 30px;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Secciones */
+section {
+    background: white; /* Color de fondo de las secciones */
+    margin: 20px auto; /* Margen para separar las secciones */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    max-width: 800px; /* Ancho máximo de las secciones */
+    border-left: 5px solid #4CAF50; /* Borde izquierdo verde */
+    border-right: 5px solid #2196F3; /* Borde derecho azul */
+}
+
+h1, h2, h3 {
+    color: #333; /* Color de los encabezados */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px; /* Espacio interno en los campos */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+button {
+    padding: 10px;
+    background-color: #FF5722; /* Color de fondo del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px; /* Bordes redondeados del botón */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #E64A19; /* Color de fondo del botón al pasar el ratón */
+}
+
+/* Galería */
+.galeria {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.galeria img {
+    width: 30%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Carousel */
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slick-dots {
+    bottom: -30px; /* Espacio debajo del carrusel */
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    form input, form textarea {
+        width: 100%;
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.slick-prev,
+.slick-next {
+    background-color: #FF5722; /* Color de fondo de las flechas */
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 10px; /* Posición de la flecha izquierda */
+}
+
+.slick-next {
+    right: 10px; /* Posición de la flecha derecha */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: #E64A19; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilo para la sección de Lugares de Interés */
+#lugares-de-interes {
+    padding: 20px;
+    background-color: #FFF8E1; /* Color de fondo suave */
+}
+
+.lugares-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjeta-lugar {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.tarjeta-lugar img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-lugar h3 {
+    font-size: 1.5em;
+    color: #FF5722; /* Tono vibrante para los títulos */
+    margin-top: 15px;
+}
+
+.tarjeta-lugar p {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .lugares-tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-lugar {
+        width: 80%;
+    }
+}
+
+/* Estilo para la sección de Lugares de Interés */
+#lugares-de-interes {
+    padding: 20px;
+    background-color: #FFF8E1; /* Color de fondo suave */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden; /* Evita que se muestren las tarjetas fuera de la vista */
+}
+
+.tarjeta-lugar {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi transparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 90%; /* Aumenta el tamaño de las tarjetas */
+    text-align: center;
+    flex-shrink: 0; /* Evita que las tarjetas se reduzcan */
+}
+
+/* Aumentar el tamaño de las imágenes dentro de las tarjetas */
+.tarjeta-lugar img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la flecha del carrusel en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        top: 10px; /* Espacio desde la parte superior */
+        width: 40px; /* Ancho de las flechas */
+        height: 40px; /* Alto de las flechas */
+        font-size: 20px; /* Tamaño de las flechas */
+    }
+
+    .slick-prev {
+        left: 50%; /* Centrado horizontalmente */
+        transform: translateX(-50%); /* Centra la flecha */
+    }
+
+    .slick-next {
+        bottom: 10px; /* Espacio desde la parte inferior */
+        left: 50%; /* Centrado horizontalmente */
+        transform: translateX(-50%); /* Centra la flecha */
+    }
+}
+
+#comida-tipica {
+    padding: 20px;
+    background-color: #FFF8E1; /* Color de fondo suave */
+}
+
+.comida-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjeta-comida {
+    background: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 30%; /* Cambiar a 100% en pantallas pequeñas */
+    text-align: center;
+    transition: transform 0.2s; /* Efecto de hover */
+}
+
+.tarjeta-comida:hover {
+    transform: scale(1.05); /* Escalado al pasar el ratón */
+}
+
+.tarjeta-comida img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-comida h3 {
+    font-size: 1.5em;
+    color: #FF5722; /* Tono vibrante para los títulos */
+    margin-top: 15px;
+}
+
+.tarjeta-comida p {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .tarjeta-comida {
+        width: 80%; /* Se adapta al ancho de la pantalla */
+    }
+}
+
+/* Estilos del carrusel de eventos */
+#eventos {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .tarjeta-evento {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 0 15px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tarjeta-evento img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tarjeta-evento h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #ff6f61; /* Color llamativo para los títulos */
+  }
+  
+  .tarjeta-evento p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Centrar la sección de eventos */
+#eventos {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px; /* Establece un ancho máximo para la sección */
+    padding: 0 20px; /* Asegura que haya un espacio lateral en pantallas pequeñas */
+  }
+  
+  /* Estilos del carrusel de eventos */
+  .carousel {
+    display: flex;
+    justify-content: center; /* Asegura que el contenido esté centrado */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+  }
+  
+  .tarjeta-evento {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 0 15px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
